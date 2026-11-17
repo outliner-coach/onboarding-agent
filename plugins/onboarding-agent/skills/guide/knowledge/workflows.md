@@ -3,6 +3,8 @@
 기준일: 2026-11-17. **전체 목록이 아니다.** Notion 문서와 Slack 답변에서 확인된 것만 모았다.
 flex에서 전체 양식 목록을 받아 이 파일을 채우는 것이 가장 우선순위 높은 보강 작업이다.
 
+> 결재(워크플로우)는 2027년 1월 예정으로 flex에서 friends-erp로 옮겨 간다. 전환 후에는 아래 flex 링크를 쓸 수 없고 friends-erp의 「결재」 메뉴에서 같은 이름의 서식을 고른다. 전환 전까지는 flex가 정식이다. 자세한 내용은 [guides/friends-erp.md](guides/friends-erp.md).
+
 직링크가 없는 양식은 [flex 워크플로우 작성 화면](https://flex.team/workflow/write/templates)에서 이름으로 검색한다.
 (Flex 로그인 → 워크플로우 → 문서 작성하기 → 검색창에 양식 이름 일부 입력)
 
