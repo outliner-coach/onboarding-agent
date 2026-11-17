@@ -1,6 +1,6 @@
 ---
 name: guide
-description: 백패커(Backpackr) 구성원이 사내에서 무언가를 처음 해 볼 때 절차를 안내한다. 사내 와이파이 세팅과 장비(MAC 주소) 인증, VPN 연결, AD 계정(사번 계정) 비밀번호, SSH 키·Bitbucket 인증, AI API 키와 AI 유료 툴 신청, Jira 등 계정·권한 신청, 택배·퀵·등기, 가족돌봄휴가 같은 휴가 신청, flex 워크플로우 찾기, friends-erp(새 인사시스템) 사용법, 어느 셀에 물어야 하는지에 대한 질문에 사용한다. 회사에서 쓰는 업무 도구(Gmail·구글 드라이브·그룹메일, Slack, Notion, Jira·Bitbucket, flex, 어도비, VPN)의 사용법 질문에도 사용한다. 회사 규칙과 신청 창구가 따로 있을 수 있기 때문이다. "어디서 신청해?", "어떻게 발급받아?", "누구한테 물어봐야 해?" 같은 질문이 사내 절차에 관한 것이면 이 스킬을 쓴다.
+description: 백패커(Backpackr) 구성원이 사내에서 무언가를 처음 해 볼 때 절차를 안내한다. 사내 와이파이 세팅과 장비(MAC 주소) 인증, VPN 연결, AD 계정(사번 계정) 비밀번호, SSH 키·Bitbucket 인증, AI API 키와 AI 유료 툴 신청, Jira 등 계정·권한 신청, 택배·퀵·등기, 가족돌봄휴가 같은 휴가 신청, 근태와 휴가 신청, 경조사, 급여·증명서류, 식대·법인카드·경비 처리, 구매와 자금집행, 출장, 도서 구매와 교육 지원, 주차, 회의실, 업무 장비, 명함·복합기·공문 날인, flex 워크플로우 찾기, friends-erp(새 인사시스템) 사용법, 어느 셀에 물어야 하는지에 대한 질문에 사용한다. 회사에서 쓰는 업무 도구(Gmail·구글 드라이브·그룹메일, Slack, Notion, Jira·Bitbucket, flex, 어도비, VPN)의 사용법 질문에도 사용한다. 회사 규칙과 신청 창구가 따로 있을 수 있기 때문이다. "어디서 신청해?", "어떻게 발급받아?", "누구한테 물어봐야 해?" 같은 질문이 사내 절차에 관한 것이면 이 스킬을 쓴다.
 argument-hint: "[궁금한 것]"
 allowed-tools: Read(/${CLAUDE_SKILL_DIR}/**) WebFetch(domain:support.google.com) WebFetch(domain:slack.com) WebFetch(domain:www.notion.com) WebFetch(domain:support.atlassian.com) WebFetch(domain:guide.flex.team) WebFetch(domain:support.apple.com) WebFetch(domain:helpx.adobe.com) WebFetch(domain:docs.fortinet.com)
 ---

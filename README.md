@@ -38,7 +38,7 @@ plugins/onboarding-agent/
     SKILL.md                             답변 방식
     knowledge/
       index.md                           주제 색인
-      guides/                            주제별 절차
+      guides/                            주제별 절차 (23개)
       workflows.md                       flex 워크플로우 목록
       contacts.md                        담당 셀과 채널
       gaps.md                            알려진 공백과 상충

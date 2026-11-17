@@ -26,6 +26,7 @@
 | 공유 드라이브 역할의 차이 | [공유 드라이브에서 파일 액세스가 작동하는 방식](https://support.google.com/a/users/answer/12380484) | 권한 부여는 프렌즈셀에 요청 |
 | 공유 드라이브에 파일 저장·공유 | [공유 드라이브로 파일 또는 폴더 저장 및 공유](https://support.google.com/drive/answer/7286514) | |
 | 파일·폴더 공유와 액세스 관리 | [Google Drive 파일 및 폴더 공유](https://support.google.com/drive/answer/7166529) | |
+| 캘린더 일정에 회의실 추가 | [일정에 회의실 추가](https://support.google.com/calendar/answer/143753) | 회의실 규칙은 [guides/meeting-rooms.md](guides/meeting-rooms.md) |
 
 공유 드라이브 역할은 다섯 가지다: 관리자, 콘텐츠 관리자, 참여자, 댓글 작성자, 뷰어. 참여자는 파일을 수정하고 올릴 수 있지만 옮기거나 지울 수 없다. 옮기거나 지워야 하면 콘텐츠 관리자가 필요하다.
 
@@ -72,7 +73,9 @@ App Password는 Atlassian이 2025년 6월에 폐지를 발표했고, 2025년 9�
 | --- | --- | --- |
 | 사용 가이드 첫 화면 | [flex 사용 가이드](https://guide.flex.team/ko/) | Notion `flex 사용 가이드` |
 | 휴가 등록과 내 휴가 관리 | [flex 웹에서 휴가 등록 및 내 휴가 관리](https://guide.flex.team/en/articles/10229315-registering-leave-and-managing-my-leave-on-flex-web) | 휴가 종류와 규칙은 [guides/leave-types.md](guides/leave-types.md) |
-| 근무 등록과 조회 | [근무 등록 및 조회](https://guide.flex.team/en/articles/10294052-work-registration-and-viewing) | |
+| 근무 등록과 조회 | [근무 등록 및 조회](https://guide.flex.team/en/articles/10294052-work-registration-and-viewing) | 회사 규칙은 [guides/attendance.md](guides/attendance.md) |
+| 재직·경력증명서 내려받기 | [내 문서 업로드와 재직·경력증명서 다운로드](https://guide.flex.team/en/articles/10304345-uploading-to-my-documents-downloading-employment-career-certificates) | [guides/hr-documents.md](guides/hr-documents.md) |
+| 연차 사용 계획 문서 작성 | [연차 사용 계획 문서 작성](https://guide.flex.team/en/articles/10288632-writing-an-annual-leave-usage-plan-document) | [guides/leave-request.md](guides/leave-request.md) |
 
 - 연속된 날짜로 휴가를 등록할 때 반차 같은 세부 일정은 「세부 일정 수정」에서 따로 지정해야 한다. 그냥 등록하면 모든 날이 종일 휴가로 차감된다.
 - 근무를 종료한 뒤 확인 버튼까지 눌러야 기록이 확정된다. 누르지 않으면 다음 날 출근 시각만 남는다.
@@ -104,7 +107,7 @@ macOS 15 이상: 시스템 설정 → Wi-Fi → 네트워크 이름 옆의 세�
 
 ## 아직 공식 문서를 확인하지 않은 서비스
 
-Figma, Microsoft 365, 산돌구름, 고위드, 카카오 T 비즈니스, Claude와 ChatGPT, Bitdefender, JetBrains, Redash. 필요할 때 공식 도움말 도메인에서 찾아 이 파일에 추가한다.
+Figma, Microsoft 365, 산돌구름, 고위드(도움말 후보를 찾았으나 열어 보지 못함), 신도리코 복합기 드라이버, 카카오 T 비즈니스, Claude와 ChatGPT, Bitdefender, JetBrains, Redash. 필요할 때 공식 도움말 도메인에서 찾아 이 파일에 추가한다.
 
 ## 확인이 필요한 것
 
