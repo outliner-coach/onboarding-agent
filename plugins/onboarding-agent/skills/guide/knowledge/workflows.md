@@ -197,7 +197,7 @@ friends-erp에 등록된 일반 결재 서식 97개다. flex 워크플로우 서
 | 스터디·세미나·행사 공간 대여 | Notion `스터디/세미나 공간 대여 신청` 표에 적고 `#_qna_genie`에 확인 요청. [guides/meeting-rooms.md](guides/meeting-rooms.md) |
 | 이미지 명함, 시설 고장 제보, 장비 고장·대여 문의 | `#_qna_genie` |
 | 급여명세서, 소득 증빙 서류 | 인성스마트플랫폼에서 직접 발급. [guides/hr-documents.md](guides/hr-documents.md) |
-| 재직증명서 | flex 「문서·증명서」. [guides/hr-documents.md](guides/hr-documents.md) |
+| 재직증명서, 경력증명서 | flex 「문서·증명서」 또는 인성스마트플랫폼. [guides/hr-documents.md](guides/hr-documents.md) |
 | DB 접근 권한 | Jira "DevOps셀" 프로젝트, 이슈 유형 "RDS 유저 접근권한 생성/변경/삭제 (DCL)" |
 | 심야 교통비 | Notion [`심야교통편 이용신청서`](https://app.notion.com/p/ad3d192b30cd4faa93ca20d9e75e158a)를 먼저 쓴다. [guides/expenses.md](guides/expenses.md) |
 | 법인카드 반출 뒤 사용 내역 | [구글 폼](https://forms.gle/DC3P3oWQYWraBb7P9) |
