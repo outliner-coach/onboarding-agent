@@ -16,11 +16,12 @@
 | Jira·Confluence 계정 | 지라 발급, Jira 계정, Confluence, Atlassian 초대, 소프트웨어 계정 신청 | [guides/jira.md](guides/jira.md) | DevOps셀 | 부분확인 | 2026-11-17 |
 | 택배·퀵·등기 | 택배 신청, 운송장, 송장 출력, 퀵 서비스, 등기, 우편물 | [guides/parcel.md](guides/parcel.md) | 프렌즈셀 | 문서확인 | 2026-11-17 |
 | 가족돌봄휴가 | 가족돌봄휴가, 가족 간병, 부모님 병원, 돌봄 휴직 | [guides/family-care-leave.md](guides/family-care-leave.md) | 프렌즈셀(HR) | 부분확인 | 2026-11-17 |
+| 휴가 종류와 규칙 | 휴가 종류, 경조 휴가, 병가, 공가, 예비군, 건강검진 반차, 배우자출산휴가, 난임, 휴가 증빙, 며칠 쓸 수 있나, 휴직, 무급 병가 | [guides/leave-types.md](guides/leave-types.md) | 프렌즈셀(HR) | 부분확인 | 2026-11-17 |
 | friends-erp (flex 이관) | friends-erp, ERP, 새 인사시스템, flex 언제까지, 휴가·결재·출퇴근을 어디에 내야 하나, 에이전트 토큰 | [guides/friends-erp.md](guides/friends-erp.md) | 프렌즈셀 | 부분확인 | 2026-11-17 |
 
 휴가, 근태, 결재 질문에는 [guides/friends-erp.md](guides/friends-erp.md)의 "지금 어디에 신청해야 하나"를 함께 확인한다. 2027년 초에 flex에서 friends-erp로 옮겨 갈 예정이다.
 
 함께 쓰는 파일
-- [workflows.md](workflows.md): flex 워크플로우 이름과 직링크
+- [workflows.md](workflows.md): 결재 서식(워크플로우) 97개 목록과 flex 직링크. "어디서 신청해?" 질문은 여기서 서식 이름을 먼저 찾는다
 - [contacts.md](contacts.md): 영역별 담당 셀과 문의 채널
 - [gaps.md](gaps.md): 아직 답이 없는 주제와 확인이 필요한 상충

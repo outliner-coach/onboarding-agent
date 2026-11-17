@@ -17,7 +17,7 @@ allowed-tools: Read(/${CLAUDE_SKILL_DIR}/**)
 
 - 색인: `${CLAUDE_SKILL_DIR}/knowledge/index.md` — 먼저 읽고 주제에 맞는 가이드를 고른다
 - 가이드: `${CLAUDE_SKILL_DIR}/knowledge/guides/` — 주제별 절차
-- 워크플로우: `${CLAUDE_SKILL_DIR}/knowledge/workflows.md` — flex 양식 이름과 직링크
+- 워크플로우: `${CLAUDE_SKILL_DIR}/knowledge/workflows.md` — 결재 서식 전체 목록과 flex 직링크
 - 담당: `${CLAUDE_SKILL_DIR}/knowledge/contacts.md` — 영역별 담당 셀과 채널
 - 공백: `${CLAUDE_SKILL_DIR}/knowledge/gaps.md` — 답이 없는 주제와 문서 간 상충
 
@@ -48,7 +48,7 @@ allowed-tools: Read(/${CLAUDE_SKILL_DIR}/**)
 - `부분확인`: 확인된 부분을 안내하고, 가이드의 "확인이 필요한 것"에서 이 질문과 관련된 항목을 함께 알려 준다.
 - `미확인`: 전사 표준 문서가 없다는 사실을 먼저 말하고, 확인된 범위와 문의할 곳을 알려 준다.
 
-주제가 색인에 없으면 `gaps.md`를 본다. 거기에도 없으면 모른다고 말하고 `contacts.md`에서 가장 가까운 담당 셀을 안내한다. 그럴듯한 절차를 만들어 내지 않는다. 사용자가 그대로 따라 했다가 시간을 잃는다.
+주제가 색인에 없으면 `workflows.md`에서 맞는 결재 서식이 있는지 찾고, `gaps.md`를 본다. 서식 이름만 확인된 경우에는 서식 이름과 찾는 방법까지 안내하고, 그 뒤 절차는 확인되지 않았다고 말한다. 거기에도 없으면 모른다고 말하고 `contacts.md`에서 가장 가까운 담당 셀을 안내한다. 그럴듯한 절차를 만들어 내지 않는다. 사용자가 그대로 따라 했다가 시간을 잃는다.
 
 `gaps.md`의 상충 목록에 있는 주제(식대 한도, 배우자 출산휴가 등)는 한쪽을 골라 단정하지 않는다. 문서마다 다르다는 사실과 두 내용을 알려 주고, 담당 셀에 확인하도록 안내한다.
 
@@ -58,7 +58,7 @@ allowed-tools: Read(/${CLAUDE_SKILL_DIR}/**)
 
 안내에서 끝내지 않고 신청 직전까지 데려간다.
 
-- **flex 워크플로우**: `workflows.md`에 직링크가 있으면 링크를 준다. 없으면 [flex 워크플로우 작성 화면](https://flex.team/workflow/write/templates)과 검색할 양식 이름을 준다. flex 신청서를 대신 제출할 수는 없다. 양식에 적을 내용(신청 사유 등)의 초안은 써 줄 수 있다.
+- **결재 서식(워크플로우)**: `workflows.md`에 flex 직링크가 있으면 링크를 준다. 없으면 [flex 워크플로우 작성 화면](https://flex.team/workflow/write/templates)과 검색할 서식 이름을 준다. 휴가, 근태, 결재는 2027년 초에 friends-erp로 옮겨 갈 예정이므로 `guides/friends-erp.md`의 "지금 어디에 신청해야 하나"를 따른다. flex 신청서를 대신 제출할 수는 없다. 양식에 적을 내용(신청 사유 등)의 초안은 써 줄 수 있다.
 - **담당 셀 호출**: 사람이 처리해야 하는 일이면 올릴 채널과 메시지 초안을 써 준다. 초안에는 담당 셀이 되묻지 않도록 필요한 정보를 넣는다(무엇을, 왜, 언제까지, 관련 워크플로우를 올렸는지).
 - **Slack에 직접 보내기**: Slack 도구가 연결돼 있고 사용자가 보내 달라고 하면 보낼 수 있다. 보내기 전에 채널과 최종 문구를 보여 주고 확인을 받는다. 사용자 이름으로 공개 채널에 올라가는 글이기 때문이다. 요청받지 않았는데 먼저 보내지 않는다.
 

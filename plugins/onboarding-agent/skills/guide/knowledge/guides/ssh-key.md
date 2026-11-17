@@ -4,6 +4,7 @@ owner: DevOps셀
 status: 미확인
 last_checked: 2026-11-17
 sources:
+  - friends-erp 결재 서식 `Bitbucket 사용신청/삭제 및 Repo 권한신청` (2026-11-17 조회)
   - https://app.notion.com/p/3561f5a71344800288cdcca98168f19a  # 비개발자를 위한 Bitbucket 사용 가이드, 2026-09-16 수정
   - https://backpackr-talk.slack.com/archives/C4UJHLN2X/p1793872519119169  # Bitbucket SSH 호스트 변경 공지
 ---
@@ -25,7 +26,8 @@ sources:
 
 1. **계정 신청**: flex 워크플로우 `Bitbucket 사용신청/삭제 및 Repo 권한신청`
    - Flex 로그인 → 워크플로우 → 문서 작성하기 → 검색창에 `bit` 입력
-   - 입력 항목: 신청 사유, 기타 요청(Admin 권한 등 일반적이지 않은 요청), Repo명, 권한(`write`)
+   - 입력 항목: 계정 생성/삭제(`생성`), 신청 사유, 권한(Read, Write), 메모(Repo명과 기타 요청)
+   - 기본으로 소속 팀 repo에는 write, 다른 팀 repo에는 read 권한이 부여된다. 추가 권한이 필요하면 DevOps셀에 문의한다
 2. **인증**: 개인 PC에서는 `git clone` 할 때 브라우저 SSO가 자동으로 진행된다(Git Credential Manager). 별도 토큰이나 키 발급이 필요 없다. 최초 1회 로그인 창에서 `Sign in with your browser`를 누른다.
 3. **clone 주소**: Bitbucket 웹에서 저장소 → Clone → HTTPS 선택
 
