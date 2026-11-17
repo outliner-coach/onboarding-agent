@@ -14,6 +14,8 @@
 | --- | --- | --- |
 | 네트워크(Wi-Fi, NAC, VPN, 인터넷 차단 해제), 보안 프로그램 | DevOps셀 | `#_qna_genie` |
 | Jira, Confluence, Bitbucket, AWS, 개발 도구 계정 | DevOps셀 | flex 워크플로우 신청 후 `#_qna_genie`. Bitbucket 사용 문의는 `#g_cell_devops`의 `@cloud-engineer` |
+| 망분리 시스템, 외부 저장매체 사용, 테스트 단말기 업무망 연결, 보안성 검토 | IT Security | 결재 서식 신청 후 `#_qna_genie` |
+| 모바일 테스트 단말기 대여 | 프렌즈셀(총무) 또는 QA셀 | `#_qna_genie`에 요청하고 `모바일 장비 대여 및 반납 신청서` 작성 |
 | DB 접근 권한 | DevOps셀 | Jira "DevOps셀" 프로젝트 이슈로 신청. 문의는 `@dba` |
 | 총무, 시설, 비품, 택배, 명함, 장비 대여·교체 | 프렌즈셀 | `#_qna_genie` |
 | 슬랙 관리(외부인 초대, 유저그룹, 채널 전환) | 프렌즈셀 | `#_qna_genie` |
@@ -27,3 +29,5 @@
 
 - 셀별 Slack 유저그룹 핸들(멘션용)은 `@cloud-engineer`, `@dba` 외에는 수집하지 못했다.
 - 프렌즈셀 전용 문의 채널이 따로 있는지 확인하지 못했다.
+
+어떤 대상이 어느 창구인지는 [guides/accounts-and-access.md](guides/accounts-and-access.md)에 표로 정리돼 있다.

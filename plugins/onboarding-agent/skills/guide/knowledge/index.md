@@ -10,6 +10,7 @@
 
 | 주제 | 이런 질문에 | 가이드 | 담당 | 상태 | 기준일 |
 | --- | --- | --- | --- | --- | --- |
+| 계정·권한 신청 창구 | 권한 신청, 계정 신청, 어디에 신청, 어도비·포토샵, MS Office, 피그마, 폰트, Redash, 펜타곤·하노이, AWS, 슬랙 채널 초대, 외부인 초대, 그룹메일, 구글 드라이브 폴더 권한, 비밀번호 초기화, 공용 계정, DB 권한, 아르바이트 계정, 권한 삭제 | [guides/accounts-and-access.md](guides/accounts-and-access.md) | 프렌즈셀, DevOps셀 | 부분확인 | 2026-11-17 |
 | 사내 와이파이 세팅 | 와이파이, wifi, BPK_IAP, NAC, 인터넷 연결 안 됨, 새 노트북 네트워크, 매달 인증, 게스트 와이파이 | [guides/wifi.md](guides/wifi.md) | DevOps셀 | 문서확인 | 2026-11-17 |
 | SSH 키 | ssh 키 발급, ssh key, Bitbucket 인증, git clone 인증, 서버 접속 키, App Password | [guides/ssh-key.md](guides/ssh-key.md) | DevOps셀 | 미확인 | 2026-11-17 |
 | AI API 키 | API 키 신청, OpenAI/Gemini/Claude API, AI 유료 툴, ChatGPT·Claude 구독 지원 | [guides/ai-api-key.md](guides/ai-api-key.md) | 프렌즈셀 | 문서확인 | 2026-11-17 |

@@ -4,6 +4,7 @@ owner: 프렌즈셀
 status: 문서확인
 last_checked: 2026-11-17
 sources:
+  - friends-erp 결재 서식 `AI 유료 Tool 지원 신청/삭제` (2026-11-17 조회)
   - friends-erp 결재 서식 `AI API키 발급 신청` (2026-11-17 조회)
   - https://app.notion.com/p/29c1f5a7134480b581d8f2ba63895d87  # AI API키 지원 - 챗GPT, Gemini, Claude, 2026-09-18 수정
   - https://app.notion.com/p/35d1f5a71344809e9924c0461cf9f05d  # AI 유료툴 지원 안내, 2026-05-20 수정
@@ -43,6 +44,11 @@ sources:
 **한 줄 요약**: flex `AI 유료 Tool 지원 신청`을 올리면 프렌즈셀 담당자가 승인하고 자금집행을 요청한다.
 
 - 신청: [AI 유료 Tool 지원 신청](https://flex.team/workflow/archive/my?workflow-action=create&workflow-template-key=e91cc55fde604c4fb23e4803fdfa2365)
+- 대상: 개발 직군과 비개발 직군 모두. 개인 또는 팀별로 신청한다.
+- 지원: 개인당 월 200달러 상한, 인당 유료 툴 1개가 원칙이다.
+- 개발 직군은 쓰던 툴의 사용량 한도를 넘겼거나 툴을 바꿔야 할 때 상향을 신청할 수 있다(Claude Code 요금제 상향, Cursor 사용량 기반 과금 허용, Codex 추가 크레딧). 월별로 전환할 수 있다.
+- 요금제 상향을 신청할 때는 한도 초과 메시지 스크린샷을 첨부해야 한다.
+- 쓰지 않게 되면 같은 서식에서 삭제로 올린다.
 - 승인 후 절차(회사 계정 로그인, 카드 등록, 고위드 기록 방식)는 Notion [AI 유료툴 지원 안내](https://app.notion.com/p/35d1f5a71344809e9924c0461cf9f05d)를 따른다.
 - 퇴사 전에는 구독을 해지해야 한다.
 - 회사 계정으로 유료 구독 중이면 사용량 수집 크롬 확장 설치가 필수라는 Slack 안내가 있었다. 신청자 필수 확인 문서를 함께 본다.
