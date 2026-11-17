@@ -1,0 +1,7 @@
+{
+  "name": "onboarding-agent",
+  "description": "백패커 구성원이 사내에서 무언가를 처음 해 볼 때 절차, 신청 경로, 담당 셀을 안내한다.",
+  "author": {
+    "name": "outliner-coach"
+  }
+}
