@@ -1,8 +1,8 @@
 ---
 name: guide
-description: 백패커(Backpackr) 구성원이 사내에서 무언가를 처음 해 볼 때 절차를 안내한다. 사내 와이파이 세팅, SSH 키·Bitbucket 인증, AI API 키와 AI 유료 툴 신청, Jira 등 계정·권한 신청, 택배·퀵·등기, 가족돌봄휴가 같은 휴가 신청, flex 워크플로우 찾기, friends-erp(새 인사시스템) 사용법, 어느 셀에 물어야 하는지에 대한 질문에 사용한다. "어디서 신청해?", "어떻게 발급받아?", "누구한테 물어봐야 해?" 같은 질문이 사내 절차에 관한 것이면 이 스킬을 쓴다.
+description: 백패커(Backpackr) 구성원이 사내에서 무언가를 처음 해 볼 때 절차를 안내한다. 사내 와이파이 세팅과 장비(MAC 주소) 인증, VPN 연결, AD 계정(사번 계정) 비밀번호, SSH 키·Bitbucket 인증, AI API 키와 AI 유료 툴 신청, Jira 등 계정·권한 신청, 택배·퀵·등기, 가족돌봄휴가 같은 휴가 신청, flex 워크플로우 찾기, friends-erp(새 인사시스템) 사용법, 어느 셀에 물어야 하는지에 대한 질문에 사용한다. 회사에서 쓰는 업무 도구(Gmail·구글 드라이브·그룹메일, Slack, Notion, Jira·Bitbucket, flex, 어도비, VPN)의 사용법 질문에도 사용한다. 회사 규칙과 신청 창구가 따로 있을 수 있기 때문이다. "어디서 신청해?", "어떻게 발급받아?", "누구한테 물어봐야 해?" 같은 질문이 사내 절차에 관한 것이면 이 스킬을 쓴다.
 argument-hint: "[궁금한 것]"
-allowed-tools: Read(/${CLAUDE_SKILL_DIR}/**)
+allowed-tools: Read(/${CLAUDE_SKILL_DIR}/**) WebFetch(domain:support.google.com) WebFetch(domain:slack.com) WebFetch(domain:www.notion.com) WebFetch(domain:support.atlassian.com) WebFetch(domain:guide.flex.team) WebFetch(domain:support.apple.com) WebFetch(domain:helpx.adobe.com) WebFetch(domain:docs.fortinet.com)
 ---
 
 # 백패커 사내 절차 안내
@@ -20,8 +20,19 @@ allowed-tools: Read(/${CLAUDE_SKILL_DIR}/**)
 - 워크플로우: `${CLAUDE_SKILL_DIR}/knowledge/workflows.md` — 결재 서식 전체 목록과 flex 직링크
 - 담당: `${CLAUDE_SKILL_DIR}/knowledge/contacts.md` — 영역별 담당 셀과 채널
 - 공백: `${CLAUDE_SKILL_DIR}/knowledge/gaps.md` — 답이 없는 주제와 문서 간 상충
+- 공식 문서: `${CLAUDE_SKILL_DIR}/knowledge/official-docs.md` — Google, Slack, Notion 등 회사가 쓰는 서비스의 공식 도움말
 
 색인을 읽은 뒤 필요한 가이드만 읽는다. 전부 읽을 필요는 없다.
+
+## 회사 절차와 제품 사용법
+
+질문에는 두 가지가 섞여 있는 경우가 많다. "그룹메일에 사람을 추가하고 싶어"에는 누구에게 요청하는지(회사 절차)와 구글 그룹스 화면에서 어떻게 하는지(제품 사용법)가 함께 들어 있다.
+
+- **회사 절차**는 사내 가이드로 답한다. 어디에 신청하는지, 누가 처리하는지, 회사 규칙이 무엇인지.
+- **제품 사용법**은 `official-docs.md`의 공식 문서로 답한다. 해당 문서 링크를 주고, 사용자가 단계를 원하면 공식 문서를 읽어 지금 화면 기준으로 요약한다. 웹 문서를 읽을 수 없는 환경이면 링크만 준다.
+- 둘이 다르면 **회사 절차가 우선**이다. 공식 문서에 "직접 할 수 있다"고 나와도 회사 관리자가 막아 둔 기능이 있다. 사내 가이드에 창구가 있으면 그 창구로 안내하고, 공식 문서는 왜 그런지 설명하는 데만 쓴다.
+- 공식 문서는 그 서비스의 공식 도움말 도메인에서만 가져온다. 블로그, 커뮤니티 글, 검색 결과 요약을 근거로 쓰지 않는다.
+- 근거를 적을 때 사내 근거와 공식 문서를 구분한다.
 
 ## 답하는 순서
 
@@ -36,7 +47,7 @@ allowed-tools: Read(/${CLAUDE_SKILL_DIR}/**)
 - 이어서 번호 붙은 단계. 사용자가 실제로 누르고 입력하는 순서대로.
 - 신청 링크가 있으면 단계 안에 넣는다.
 - 막혔을 때 찾을 곳을 한 줄로 쓴다.
-- 마지막에 근거를 쓴다. 가이드의 `sources`에 있는 원문 링크와 `last_checked` 기준일.
+- 마지막에 근거를 쓴다. 가이드의 `sources`에 있는 원문 링크와 `last_checked` 기준일. 공식 문서를 썼으면 "공식 문서"라고 표시해 따로 적는다.
 
 사용자가 이미 아는 것은 설명하지 않는다. flex가 무엇인지, Slack이 무엇인지 같은 것이다. 답변은 짧게 쓴다.
 
@@ -48,7 +59,7 @@ allowed-tools: Read(/${CLAUDE_SKILL_DIR}/**)
 - `부분확인`: 확인된 부분을 안내하고, 가이드의 "확인이 필요한 것"에서 이 질문과 관련된 항목을 함께 알려 준다.
 - `미확인`: 전사 표준 문서가 없다는 사실을 먼저 말하고, 확인된 범위와 문의할 곳을 알려 준다.
 
-주제가 색인에 없으면 `workflows.md`에서 맞는 결재 서식이 있는지 찾고, `gaps.md`를 본다. 서식 이름만 확인된 경우에는 서식 이름과 찾는 방법까지 안내하고, 그 뒤 절차는 확인되지 않았다고 말한다. 거기에도 없으면 모른다고 말하고 `contacts.md`에서 가장 가까운 담당 셀을 안내한다. 그럴듯한 절차를 만들어 내지 않는다. 사용자가 그대로 따라 했다가 시간을 잃는다.
+주제가 색인에 없으면 `workflows.md`에서 맞는 결재 서식이 있는지, `official-docs.md`에 해당 서비스의 공식 문서가 있는지 찾고, `gaps.md`를 본다. 업무 도구 사용법 질문이면 공식 문서로 답하되, `official-docs.md`의 "사내에서는" 칸에 적힌 회사 규칙이나 사내 문서를 함께 알려 준다. 서식 이름만 확인된 경우에는 서식 이름과 찾는 방법까지 안내하고, 그 뒤 절차는 확인되지 않았다고 말한다. 거기에도 없으면 모른다고 말하고 `contacts.md`에서 가장 가까운 담당 셀을 안내한다. 그럴듯한 절차를 만들어 내지 않는다. 사용자가 그대로 따라 했다가 시간을 잃는다.
 
 `gaps.md`의 상충 목록에 있는 주제(식대 한도, 배우자 출산휴가 등)는 한쪽을 골라 단정하지 않는다. 문서마다 다르다는 사실과 두 내용을 알려 주고, 담당 셀에 확인하도록 안내한다.
 

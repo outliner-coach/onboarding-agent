@@ -4,6 +4,7 @@ owner: DevOps셀
 status: 문서확인
 last_checked: 2026-11-17
 sources:
+  - https://backpackr-talk.slack.com/archives/C4UHULRPB/p1792118293672759  # 취소선 MAC 값을 nacpass에 입력
   - https://app.notion.com/p/ee9db86c1ec34bdf9f592c9ebaacb3f4  # 사내 네트워크 이용하기(Wi-Fi), 2026-03-10 수정
   - https://backpackr-talk.slack.com/archives/C4UHULRPB/p1794376423038399?thread_ts=1794376410.220169&cid=C4UHULRPB
 ---
@@ -29,7 +30,7 @@ sources:
 1. **와이파이 연결**
    - Windows: 화면 오른쪽 아래 Wi-Fi 아이콘 → `>` 버튼 → `BPK_IAP` → 연결 → 암호 입력
    - macOS: 화면 오른쪽 위 Wi-Fi 아이콘 → 다른 네트워크 → `BPK_IAP` → 암호 입력. 붙여넣기가 실패하면 직접 입력한다.
-2. **(macOS 15 이상) 무작위 MAC 주소 끄기**: Wi-Fi 설정에서 '비공개 Wi-Fi 주소'를 끈다. 방법은 [무작위 MAC 주소 해제 가이드](https://app.notion.com/p/31f1f5a7134480bf91d5c56ab6249799).
+2. **(macOS 15 이상) 무작위 MAC 주소 끄기**: 시스템 설정 → Wi-Fi → `BPK_IAP` 옆의 세부사항 → 비공개 Wi-Fi 주소를 `끔`으로 바꾼다. 이 네트워크에만 적용된다. 공식 문서: [Mac에서 비공개 Wi-Fi 주소 사용하기](https://support.apple.com/guide/mac-help/use-a-private-wi-fi-address-on-mac-mchlb1cb3eb4/mac). 사내 문서: [무작위 MAC 주소 해제 가이드](https://app.notion.com/p/31f1f5a7134480bf91d5c56ab6249799).
 3. **NAC 인증 포털 열기**: 처음 연결하면 인터넷이 안 되거나 특정 페이지로만 이동한다. 정상이다. 포털 주소는 Notion 원문의 "OS 공통" 항목에 있다.
 4. **포털이 안내하는 대로 조치**
    - 백신 미설치 메시지 → Bitdefender 설치 (보통 지급 시 설치돼 있음)
@@ -41,6 +42,26 @@ sources:
 MAC 주소 확인
 - macOS: 애플 메뉴 → 이 Mac에 관하여 → 시스템 리포트 → 네트워크
 - Windows: 명령 프롬프트에서 `ipconfig /all` → 어댑터별 물리적 주소
+
+## 등록되지 않은 장비라고 나올 때 (새 노트북, 신규 입사자 맥북)
+
+새로 받은 노트북을 `BPK_IAP`에 처음 연결하면 인터넷이 차단되고, 인증 포털에 `MAC=xx:xx:xx:xx:xx:xx` 값이 **취소선**으로 표시된다. 그 장비의 MAC 주소가 아직 허용 목록에 없다는 뜻이다. 고장이 아니고, 본인이 직접 등록할 수 있다.
+
+1. 포털 화면에 취소선으로 표시된 MAC 값을 그대로 복사한다.
+2. 포털의 `nacpass` 버튼을 눌러 MAC 인증 페이지를 연다. 주소는 Notion 원문의 "OS 공통" 항목에도 있다.
+3. 복사한 MAC 값을 입력해 인증한다.
+4. 포털로 돌아가 `인증` 버튼으로 회사 구글 계정 인증을 마친다.
+
+인증했는데도 계속 차단될 때
+- **macOS 15 이상**: 비공개 Wi-Fi 주소가 켜져 있으면 인증한 MAC과 실제로 쓰는 MAC이 달라진다. 위 절차 2번대로 끄고, 포털에 표시되는 값으로 다시 인증한다.
+- 입력한 MAC 값에 오타가 없는지 확인한다. 포털에 표시된 값과 한 글자도 다르면 안 된다.
+- Windows에서 유선과 무선을 함께 쓰면 라우팅 문제로 차단된 것처럼 보일 수 있다. DevOps셀이 안내하는 라우팅 재설정 스크립트를 실행한다.
+- 그래도 안 되면 `#_qna_genie`에 포털 화면 캡처를 올린다. DevOps셀 담당이 자리로 와서 봐 주기도 한다.
+
+함께 알아 둘 것
+- 휴대전화와 태블릿은 `BPK_IAP`가 아니라 `BPK_GAP`를 쓴다.
+- 회사가 지급하지 않은 개인 노트북을 사내에 들여와 쓰려면 결재 서식 `정보 자산 반입/반출 신청서`가 필요하다. [accounts-and-access.md](accounts-and-access.md) 참고.
+- 테스트용 단말기를 업무망에 연결하려면 결재 서식 `테스트 단말기 업무망 연결 신청/삭제`를 올린다.
 
 ## 자주 막히는 곳
 
@@ -56,4 +77,6 @@ MAC 주소 확인
 ## 확인이 필요한 것
 
 - Notion 문서 본문은 `BPK_IAP`, QnA는 `BPK_IAP_20F`로 SSID 표기가 다르다. 목록에 보이는 이름으로 연결한다.
+- 인증 포털이 등록되지 않은 장비에 대해 정확히 어떤 문구를 보여 주는지는 확인하지 못했다. 채널 사례는 모두 "MAC 값에 취소선"으로 설명한다.
+- 유선 어댑터나 독을 쓰면 MAC 주소가 달라 따로 인증해야 하는지는 확인하지 못했다.
 - `BPK_TAP` 사용 신청은 예전 flex 전자결재 절차가 취소선 처리돼 있고 대체 절차가 없다. 모바일 외 기기 연결은 DevOps셀에 문의한다.

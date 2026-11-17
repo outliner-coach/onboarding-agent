@@ -32,7 +32,7 @@ flex 워크플로우 `Jira, Confluence 계정 신청/삭제`를 올리면 DevOps
 
 아래는 관리자 권한이 필요하다. `#_qna_genie`에서 DevOps셀에 요청한다.
 
-- 표시 이름(닉네임) 변경
+- 표시 이름(닉네임) 변경. 공식 문서상으로는 본인이 Atlassian 계정의 프로필에서 공개 이름을 바꿀 수 있다: [프로필 및 공개 범위 설정 업데이트](https://support.atlassian.com/atlassian-account/docs/update-your-profile-and-visibility-settings/). 직접 바꿀 수 없을 때 요청한다
 - 프로젝트 또는 Confluence 스페이스 생성
 - 복직자 계정 복원, 퇴사자 계정 정리
 

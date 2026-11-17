@@ -11,7 +11,9 @@
 | 주제 | 이런 질문에 | 가이드 | 담당 | 상태 | 기준일 |
 | --- | --- | --- | --- | --- | --- |
 | 계정·권한 신청 창구 | 권한 신청, 계정 신청, 어디에 신청, 어도비·포토샵, MS Office, 피그마, 폰트, Redash, 펜타곤·하노이, AWS, 슬랙 채널 초대, 외부인 초대, 그룹메일, 구글 드라이브 폴더 권한, 비밀번호 초기화, 공용 계정, DB 권한, 아르바이트 계정, 권한 삭제 | [guides/accounts-and-access.md](guides/accounts-and-access.md) | 프렌즈셀, DevOps셀 | 부분확인 | 2026-11-17 |
-| 사내 와이파이 세팅 | 와이파이, wifi, BPK_IAP, NAC, 인터넷 연결 안 됨, 새 노트북 네트워크, 매달 인증, 게스트 와이파이 | [guides/wifi.md](guides/wifi.md) | DevOps셀 | 문서확인 | 2026-11-17 |
+| 사내 와이파이 세팅 | 와이파이, wifi, BPK_IAP, NAC, nacpass, 인터넷 연결 안 됨, 인터넷 차단, 허용되지 않은 MAC 주소, 맥주소 등록, 장비 인증, 신규 입사자 맥북, 새 노트북 네트워크, 매달 인증, 게스트 와이파이 | [guides/wifi.md](guides/wifi.md) | DevOps셀 | 문서확인 | 2026-11-17 |
+| VPN 연결 | VPN, FortiClient, 포티클라이언트, 재택 접속, 외부에서 사내 시스템 접속, VPN 로그인 실패, 핫스팟 VPN, 아이폰 VPN | [guides/vpn.md](guides/vpn.md) | DevOps셀 | 문서확인 | 2026-11-17 |
+| AD 계정과 비밀번호 | AD 계정, 사번 계정, AD 비밀번호 초기화, 비밀번호 변경, VPN 비밀번호, NAS 로그인, b로 시작하는 계정 | [guides/ad-account.md](guides/ad-account.md) | DevOps셀 | 부분확인 | 2026-11-17 |
 | SSH 키 | ssh 키 발급, ssh key, Bitbucket 인증, git clone 인증, 서버 접속 키, App Password | [guides/ssh-key.md](guides/ssh-key.md) | DevOps셀 | 미확인 | 2026-11-17 |
 | AI API 키 | API 키 신청, OpenAI/Gemini/Claude API, AI 유료 툴, ChatGPT·Claude 구독 지원 | [guides/ai-api-key.md](guides/ai-api-key.md) | 프렌즈셀 | 문서확인 | 2026-11-17 |
 | Jira·Confluence 계정 | 지라 발급, Jira 계정, Confluence, Atlassian 초대, 소프트웨어 계정 신청 | [guides/jira.md](guides/jira.md) | DevOps셀 | 부분확인 | 2026-11-17 |
@@ -26,3 +28,4 @@
 - [workflows.md](workflows.md): 결재 서식(워크플로우) 97개 목록과 flex 직링크. "어디서 신청해?" 질문은 여기서 서식 이름을 먼저 찾는다
 - [contacts.md](contacts.md): 영역별 담당 셀과 문의 채널
 - [gaps.md](gaps.md): 아직 답이 없는 주제와 확인이 필요한 상충
+- [official-docs.md](official-docs.md): Google, Slack, Notion, Atlassian, flex 등 서비스 공식 도움말. 제품 화면에서 어떻게 하는지는 여기서 찾는다

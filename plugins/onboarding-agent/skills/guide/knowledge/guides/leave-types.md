@@ -17,7 +17,7 @@ sources:
 
 ## 어디서 신청하나
 
-- 지금: flex → 휴가
+- 지금: flex → 휴가. 화면 조작은 flex 공식 문서 [휴가 등록 및 내 휴가 관리](https://guide.flex.team/en/articles/10229315-registering-leave-and-managing-my-leave-on-flex-web)를 따른다. 연속된 날짜에 반차를 섞을 때는 「세부 일정 수정」에서 따로 지정해야 한다
 - 2027년 1월 예정 전환 후: friends-erp → 메뉴 「휴가」 → 종류 카드 선택. [friends-erp.md](friends-erp.md) 참고
 
 ## 휴가 종류

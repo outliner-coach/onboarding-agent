@@ -12,7 +12,7 @@
 
 | 영역 | 담당 셀 | 문의 경로 |
 | --- | --- | --- |
-| 네트워크(Wi-Fi, NAC, VPN, 인터넷 차단 해제), 보안 프로그램 | DevOps셀 | `#_qna_genie` |
+| 네트워크(Wi-Fi, NAC, VPN, 인터넷 차단 해제), AD 계정, 보안 프로그램 | DevOps셀 | `#_qna_genie` |
 | Jira, Confluence, Bitbucket, AWS, 개발 도구 계정 | DevOps셀 | flex 워크플로우 신청 후 `#_qna_genie`. Bitbucket 사용 문의는 `#g_cell_devops`의 `@cloud-engineer` |
 | 망분리 시스템, 외부 저장매체 사용, 테스트 단말기 업무망 연결, 보안성 검토 | IT Security | 결재 서식 신청 후 `#_qna_genie` |
 | 모바일 테스트 단말기 대여 | 프렌즈셀(총무) 또는 QA셀 | `#_qna_genie`에 요청하고 `모바일 장비 대여 및 반납 신청서` 작성 |

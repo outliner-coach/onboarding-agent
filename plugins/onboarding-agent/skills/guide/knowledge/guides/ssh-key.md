@@ -32,8 +32,8 @@ sources:
 3. **clone 주소**: Bitbucket 웹에서 저장소 → Clone → HTTPS 선택
 
 참고
-- 서버나 자동화에서는 API Token을 쓴다. **App Password는 폐지됐다.** 일부 셀 문서에 App Password 적용 방법이 남아 있지만 따르지 않는다.
-- 그래도 SSH로 쓰려면 키는 회사가 발급하는 것이 아니라 본인이 만들어 Bitbucket 개인 설정의 SSH keys에 등록한다. 이 방식은 일부 셀 문서에만 있고 전사 표준이 아니다.
+- 서버나 자동화에서는 API Token을 쓴다. **App Password는 폐지됐다.** Atlassian 공식 안내로도 확인된다(2025년 9월부터 신규 생성 불가, 2026년 중반 비활성화): [API 토큰 전환 안내](https://www.atlassian.com/blog/bitbucket/bitbucket-cloud-transitions-to-api-tokens-enhancing-security-with-app-password-deprecation). 일부 셀 문서에 App Password 적용 방법이 남아 있지만 따르지 않는다.
+- 그래도 SSH로 쓰려면 키는 회사가 발급하는 것이 아니라 본인이 만들어 Bitbucket 개인 설정의 SSH keys에 등록한다. 이 방식은 전사 표준이 아니다. 방법은 Atlassian 공식 문서를 따른다: [macOS](https://support.atlassian.com/bitbucket-cloud/docs/set-up-personal-ssh-keys-on-macos/), [Windows](https://support.atlassian.com/bitbucket-cloud/docs/set-up-personal-ssh-keys-on-windows/).
 - 2026-11-12부터 Bitbucket SSH 호스트가 바뀐다는 전사 공지가 있었다. SSH를 쓰고 있다면 공지 원문을 확인한다.
 
 문의: `#g_cell_devops`의 `@cloud-engineer`
@@ -46,4 +46,4 @@ sources:
 ## 관련
 
 - DB 접근 권한은 SSH 키가 아니라 Jira "DevOps셀" 프로젝트의 이슈로 신청한다. [workflows.md](../workflows.md) 참고.
-- VPN 계정은 입사 시 사번 계정으로 발급된다. 사용법은 Notion `Forticlient VPN 사용법`.
+- VPN 연결은 [vpn.md](vpn.md), 사번 계정 비밀번호는 [ad-account.md](ad-account.md).
